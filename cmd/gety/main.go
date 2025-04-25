@@ -16,7 +16,12 @@ import (
     "crypto/tls"
 )
 
+const version = "v0.1.0" // update this on each release
+
 func main() {
+    // Version flag
+    fVersion := flag.Bool("version", false, "Print version information and exit")
+    
     // HTTP method flags
     fGET := flag.Bool("GET", false, "Use GET method")
     fPOST := flag.Bool("POST", false, "Use POST method")
@@ -32,6 +37,12 @@ func main() {
     insecure := flag.Bool("insecure", false, "Disable TLS certificate verification")
 
     flag.Parse()
+
+    // Handle version early
+    if *fVersion {
+        fmt.Printf("gety %s\n", version)
+        return
+    }
 
     // Determine HTTP method
     var method string
