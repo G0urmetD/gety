@@ -5,7 +5,7 @@ Commandline tool for sending HTTP requests (GET, POST, HEAD, PUT, etc.) through 
 Requires `Go 1.18` or newer.
 
 ```
-go install github.com/<github‑user>/<repo>/cmd/gety@latest
+go install github.com/G0urmetD/gety/cmd/gety@latest
 ```
 
 ## Usage
