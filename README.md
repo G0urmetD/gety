@@ -2,7 +2,7 @@
 Commandline tool for sending HTTP requests (GET, POST, HEAD, PUT, etc.) through a configurable proxy like Burp Suite.
 
 ## Installation
-Requires `Go 1.18` or newer.
+Requires `Go 1.21` or newer.
 
 ```
 go install github.com/G0urmetD/gety/cmd/gety@latest
