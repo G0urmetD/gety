@@ -23,10 +23,13 @@ go install github.com/G0urmetD/gety/cmd/gety@latest
   ```
 
 ## Parameters
-| Flag         | Description                                  |
-|--------------|----------------------------------------------|
-| `-GET`  | Use HTTP GET method.              |
-| `-POST`     | Use HTTP POST method.      |
-| `-HEAD`   | Use HTTP HEAD method.   |
-| `-PUT`    | Use HTTP PUT method.         |
-| `-proxy`    | (Required) Proxy URL to route requests through (e.g. Burp Suite)              |
+| Flag         | Description                                                             |
+|--------------|-------------------------------------------------------------------------|
+| `-GET`  | Use HTTP GET method.                                                         |
+| `-POST`     | Use HTTP POST method.                                                    |
+| `-HEAD`   | Use HTTP HEAD method.                                                      |
+| `-PUT`    | Use HTTP PUT method.                                                       |
+| `-proxy`    | (Required) Proxy URL to route requests through (e.g. Burp Suite)         |
+| `-rl`    | Rate limit in seconds between requests to the same host.                    |
+| `-fc`    | Comma-separated list of HTTP status codes to filter output (e.g., 200,403). |
+| `-insecure`    | Disable TLS certificate verification (skip certificate validation).   |
